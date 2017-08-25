@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ZanCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="141" height="49"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="141" height="49"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TW8-nI-4ZN">
+                        <rect key="frame" x="0.0" y="0.0" width="112" height="49"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DoD-IQ-NAr">
+                        <rect key="frame" x="113" y="0.0" width="28" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="0n2-3V-hND"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title=" 8" image="me_zan">
+                            <color key="titleColor" red="0.22745098039215686" green="0.80000000000000004" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="DoD-IQ-NAr" firstAttribute="leading" secondItem="TW8-nI-4ZN" secondAttribute="trailing" constant="1" id="38w-Tt-gBt"/>
+                <constraint firstItem="TW8-nI-4ZN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3Mn-w5-Qaa"/>
+                <constraint firstItem="TW8-nI-4ZN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="EZp-6G-Ttk"/>
+                <constraint firstItem="DoD-IQ-NAr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Hgu-6e-Vwd"/>
+                <constraint firstAttribute="bottom" secondItem="DoD-IQ-NAr" secondAttribute="bottom" id="NwA-a9-BPn"/>
+                <constraint firstAttribute="trailing" secondItem="DoD-IQ-NAr" secondAttribute="trailing" id="VG4-QQ-D4U"/>
+                <constraint firstAttribute="bottom" secondItem="TW8-nI-4ZN" secondAttribute="bottom" id="cpS-sl-0ns"/>
+            </constraints>
+            <size key="customSize" width="141" height="49"/>
+            <connections>
+                <outlet property="btn_zan" destination="DoD-IQ-NAr" id="2Db-Ti-Wqq"/>
+                <outlet property="lbl_title" destination="TW8-nI-4ZN" id="2HZ-6h-Y26"/>
+            </connections>
+            <point key="canvasLocation" x="78.5" y="77.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="me_zan" width="10" height="8"/>
+    </resources>
+</document>

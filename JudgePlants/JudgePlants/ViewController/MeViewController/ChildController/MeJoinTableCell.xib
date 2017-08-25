@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MeJoinTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="苗圃地的选择和整理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGl-aI-8k7">
+                        <rect key="frame" x="15" y="8" width="156" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="a9r-bu-bYW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-05-08" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e91-wS-E4I">
+                        <rect key="frame" x="238" y="8" width="74" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="GvK-Wg-sYT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.70196078429999997" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="005" translatesAutoresizingMaskIntoConstraints="NO" id="PIa-XG-P9d">
+                        <rect key="frame" x="15" y="37" width="65" height="65"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="65" id="Ofx-v6-6Sw"/>
+                            <constraint firstAttribute="width" constant="65" id="lNG-mZ-USt"/>
+                            <constraint firstAttribute="width" secondItem="PIa-XG-P9d" secondAttribute="height" multiplier="1:1" id="tug-Ij-QPz"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京、天津、山东、河北、陕西等地均有引种栽培。苗圃地的" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEv-JP-kME">
+                        <rect key="frame" x="94" y="37" width="218" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37P-3x-kT0">
+                        <rect key="frame" x="95" y="92" width="55" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="489-Ni-vVx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="  1080" image="me_pl">
+                            <color key="titleColor" red="0.70196078429999997" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="btnMessage:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wUp-AY-6Mo"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acn-oA-uVs">
+                        <rect key="frame" x="192" y="92" width="46" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="  520" image="photo_zan_red">
+                            <color key="titleColor" red="0.70196078429999997" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="btnDidLove:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="uZY-kO-dJl"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dGl-aI-8k7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="0HB-u2-ujX"/>
+                    <constraint firstItem="XEv-JP-kME" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="BOM-RM-PWr"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="37P-3x-kT0" secondAttribute="bottom" constant="7.5" id="Be6-fe-iRt"/>
+                    <constraint firstItem="XEv-JP-kME" firstAttribute="top" secondItem="e91-wS-E4I" secondAttribute="bottom" constant="8" id="HQA-Gy-u9J"/>
+                    <constraint firstItem="dGl-aI-8k7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="UJM-Ae-R6z"/>
+                    <constraint firstItem="e91-wS-E4I" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="czL-D5-oPC"/>
+                    <constraint firstItem="PIa-XG-P9d" firstAttribute="top" secondItem="dGl-aI-8k7" secondAttribute="bottom" constant="8" id="gRq-Md-S5u"/>
+                    <constraint firstItem="37P-3x-kT0" firstAttribute="leading" secondItem="PIa-XG-P9d" secondAttribute="trailing" constant="15" id="m4Z-PW-Bgx"/>
+                    <constraint firstItem="PIa-XG-P9d" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="mxC-un-gTb"/>
+                    <constraint firstItem="XEv-JP-kME" firstAttribute="leading" secondItem="PIa-XG-P9d" secondAttribute="trailing" constant="14" id="rkA-Q2-ge5"/>
+                    <constraint firstItem="acn-oA-uVs" firstAttribute="leading" secondItem="37P-3x-kT0" secondAttribute="trailing" constant="42" id="rn6-eX-vAj"/>
+                    <constraint firstItem="acn-oA-uVs" firstAttribute="centerY" secondItem="37P-3x-kT0" secondAttribute="centerY" id="uIT-QM-Ywb"/>
+                    <constraint firstItem="e91-wS-E4I" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="x02-ca-r0k"/>
+                    <constraint firstItem="acn-oA-uVs" firstAttribute="height" secondItem="37P-3x-kT0" secondAttribute="height" id="xUj-Vz-Xgw"/>
+                    <constraint firstItem="37P-3x-kT0" firstAttribute="top" secondItem="XEv-JP-kME" secondAttribute="bottom" constant="19" id="zcO-Fh-eCC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btn_love" destination="acn-oA-uVs" id="4N3-fy-bnb"/>
+                <outlet property="btn_message" destination="37P-3x-kT0" id="XAz-g4-ZSD"/>
+                <outlet property="image_back" destination="PIa-XG-P9d" id="8gF-MR-Hwe"/>
+                <outlet property="lbl_content" destination="XEv-JP-kME" id="GlX-It-SMh"/>
+                <outlet property="lbl_time" destination="e91-wS-E4I" id="IyY-T2-jr7"/>
+                <outlet property="lbl_title" destination="dGl-aI-8k7" id="Mol-qz-4MX"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="005" width="363" height="368"/>
+        <image name="me_pl" width="14" height="12"/>
+        <image name="photo_zan_red" width="12" height="11"/>
+    </resources>
+</document>

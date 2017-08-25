@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SubjectionsCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wait_ader1" translatesAutoresizingMaskIntoConstraints="NO" id="yuk-rA-HMa">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="yuk-rA-HMa" secondAttribute="height" multiplier="25:9" id="ru1-4y-foh"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广玉兰的移植方法" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHq-dz-cqo">
+                        <rect key="frame" x="8" y="100" width="234" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="NHF-QP-Ry0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xc-dm-L6d">
+                        <rect key="frame" x="8" y="129" width="234" height="49"/>
+                        <attributedString key="attributedText">
+                            <fragment content="开发商今年多次找到4S店，表示不愿意继续租给他们，要他们搬家。但谁也没想到，双方还没达成解除合同的协议，金源居然把他们的房子推倒了，里面还有大量的装修和设备呢，损失金额高达3000多万元">
+                                <attributes>
+                                    <color key="NSColor" red="0.70196078429999997" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="14" name="MicrosoftYaHei"/>
+                                    <real key="NSKern" value="0.0"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                        <tabStops/>
+                                    </paragraphStyle>
+                                    <color key="NSStrokeColor" red="0.33333000000000002" green="0.33333000000000002" blue="0.33333000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fM5-4z-a5s">
+                        <rect key="frame" x="10" y="204" width="230" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="Y03-dp-F0S"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="查看标题">
+                            <color key="titleColor" red="0.1333333333" green="0.82745098039999998" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="btnCheck:" destination="gTV-IL-0wX" eventType="touchUpInside" id="iIl-oX-kiT"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="yuk-rA-HMa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="38x-zh-t76"/>
+                <constraint firstItem="HHq-dz-cqo" firstAttribute="top" secondItem="yuk-rA-HMa" secondAttribute="bottom" constant="10" id="7dB-L0-4I2"/>
+                <constraint firstItem="8Xc-dm-L6d" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="MKM-k0-Mgi"/>
+                <constraint firstItem="8Xc-dm-L6d" firstAttribute="top" secondItem="HHq-dz-cqo" secondAttribute="bottom" constant="8" id="N28-FR-0sA"/>
+                <constraint firstAttribute="bottom" secondItem="fM5-4z-a5s" secondAttribute="bottom" constant="11" id="R1a-Q5-kv3"/>
+                <constraint firstItem="HHq-dz-cqo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="YVP-Av-kFi"/>
+                <constraint firstAttribute="trailing" secondItem="fM5-4z-a5s" secondAttribute="trailing" constant="10" id="cKU-XS-19y"/>
+                <constraint firstAttribute="trailing" secondItem="yuk-rA-HMa" secondAttribute="trailing" id="cfc-ab-LLI"/>
+                <constraint firstItem="yuk-rA-HMa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="efH-ev-Eap"/>
+                <constraint firstAttribute="trailing" secondItem="8Xc-dm-L6d" secondAttribute="trailing" constant="8" id="nTL-fA-BOn"/>
+                <constraint firstAttribute="trailing" secondItem="HHq-dz-cqo" secondAttribute="trailing" constant="8" id="tKL-9h-FZa"/>
+                <constraint firstItem="fM5-4z-a5s" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="wc4-Ex-TWX"/>
+            </constraints>
+            <connections>
+                <outlet property="btn_check" destination="fM5-4z-a5s" id="d3a-a0-pcW"/>
+                <outlet property="img" destination="yuk-rA-HMa" id="IwN-8N-hCH"/>
+                <outlet property="lbl_content" destination="8Xc-dm-L6d" id="wPu-bC-4Pl"/>
+                <outlet property="lbl_title" destination="HHq-dz-cqo" id="efv-Gg-RhI"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="wait_ader1" width="375" height="189"/>
+    </resources>
+</document>

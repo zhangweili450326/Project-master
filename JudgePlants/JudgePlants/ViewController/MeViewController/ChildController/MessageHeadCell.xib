@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MessageHeadCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me_message_next" translatesAutoresizingMaskIntoConstraints="NO" id="W7g-ye-9nZ">
+                        <rect key="frame" x="15" y="15" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="5Be-pG-z5H"/>
+                            <constraint firstAttribute="height" constant="60" id="fRu-UI-g8a"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="通知消息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXO-vz-BUf">
+                        <rect key="frame" x="83" y="15" width="69.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="7W9-Vh-B6X"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23:11" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r69-c5-K28">
+                        <rect key="frame" x="278" y="15" width="34" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="gx3-Zt-35r"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这些植物你都认识吗？快来证明你的实力" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOz-9e-Zjf">
+                        <rect key="frame" x="83" y="44" width="200" height="31"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="r69-c5-K28" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Aq3-fK-fRB"/>
+                    <constraint firstItem="r69-c5-K28" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="DXN-WI-e5x"/>
+                    <constraint firstItem="bXO-vz-BUf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="HBF-5u-gfK"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="vOz-9e-Zjf" secondAttribute="trailing" constant="29" id="gDA-O1-GJv"/>
+                    <constraint firstItem="W7g-ye-9nZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="h9S-SW-Abi"/>
+                    <constraint firstItem="vOz-9e-Zjf" firstAttribute="leading" secondItem="W7g-ye-9nZ" secondAttribute="trailing" constant="8" id="hFb-MY-5lc"/>
+                    <constraint firstItem="vOz-9e-Zjf" firstAttribute="top" secondItem="r69-c5-K28" secondAttribute="bottom" constant="8" id="n4I-d1-JkV"/>
+                    <constraint firstItem="bXO-vz-BUf" firstAttribute="leading" secondItem="W7g-ye-9nZ" secondAttribute="trailing" constant="8" id="nW1-Gi-K66"/>
+                    <constraint firstItem="W7g-ye-9nZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="v4b-0f-N0t"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="vOz-9e-Zjf" secondAttribute="bottom" constant="6.5" id="xXf-hB-MJB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="image_mes" destination="W7g-ye-9nZ" id="DEK-by-ceB"/>
+                <outlet property="lbl_content" destination="vOz-9e-Zjf" id="3WW-ZE-qtO"/>
+                <outlet property="lbl_time" destination="r69-c5-K28" id="KXH-dk-Te6"/>
+                <outlet property="lbl_title" destination="bXO-vz-BUf" id="SiZ-aS-SCr"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="me_message_next" width="48" height="48"/>
+    </resources>
+</document>
